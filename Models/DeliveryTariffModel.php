@@ -41,7 +41,6 @@ class DeliveryTariffModel
      */
     public function __construct(array $data)
     {
-//        list($transport_company_id, $tariff_id, $amount, $amount_cover, $days_min, $days_max) = $data;
         extract($data);
 
         $this->transport_company_id = $transport_company_id ?? null;
